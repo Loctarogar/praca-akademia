@@ -15,7 +15,6 @@ public class Main extends ApplicationAdapter {
     private SpriteBatch batch;
     private Texture welcomeScreen;
     private Texture baseGround;
-    private Texture wtf1;
 
     enum GameState {
         WELCOME,
