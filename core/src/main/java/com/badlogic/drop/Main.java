@@ -21,8 +21,10 @@ public class Main extends ApplicationAdapter {
         PLAYING
     }
 
+    // waterfall animation
     Animation<TextureRegion> backgroundAnimation;
     float animationTime = 0f;
+    TextureRegion[] frames = new TextureRegion[6];
 
     GameState currentState = GameState.WELCOME;
 
@@ -31,7 +33,7 @@ public class Main extends ApplicationAdapter {
         batch = new SpriteBatch();
         welcomeScreen = new Texture("welcome_screen.png");
         baseGround = new Texture("base_ground.png");
-        TextureRegion[] frames = new TextureRegion[6];
+        frames = new TextureRegion[6];
         for (int i = 0; i < 6; i++) {
             Texture tex = new Texture("waterfall/wtf" + (i + 1) + ".png");
             frames[i] = new TextureRegion(tex);
